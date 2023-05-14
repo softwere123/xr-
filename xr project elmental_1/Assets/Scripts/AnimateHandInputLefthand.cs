@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 //1. animator에 hand animator 불러온다 2.  헨드에니메이터 셋함수로  이프는 트리거 플로트 함수는 트리거로만든다
-public class AnimateHandInput : MonoBehaviour
+public class AnimateHandInputLefthand : MonoBehaviour
 {
     public InputActionProperty pinchAnimaitionAction;
     public InputActionProperty gripAnimationAction;
