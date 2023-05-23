@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Oculus;
+//using oculus;
 
 public class WeaponController : MonoBehaviour
 {
@@ -11,11 +11,11 @@ public class WeaponController : MonoBehaviour
     void Update()
     {
         // R버튼을 누르면 공격 타입이 바뀝니다.
-        if (OVRInput.GetDown(OVRInput.Button.One))
-        {
-            elementIndex = (elementIndex + 1) % elements.Length;
-            Debug.Log(elements[elementIndex] + " attack selected.");
-        }
+        //if (OVRInput.GetDown(OVRInput.Button.One))
+        //{
+        //    elementIndex = (elementIndex + 1) % elements.Length;
+        //    Debug.Log(elements[elementIndex] + " attack selected.");
+        //}
 
         // 선택된 공격 타입에 따라 공격 코드 실행
         switch (elements[elementIndex])
