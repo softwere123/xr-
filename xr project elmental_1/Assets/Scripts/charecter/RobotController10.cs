@@ -11,7 +11,7 @@ public class RobotController10 : MonoBehaviour
     private GameObject fireEffect; // 불 이펙트 오브젝트
     private bool isBurning = false; // 나무를 태우는 중인지 여부
 
-    private float fireDuration = 5f; // 불 이펙트 지속 시간
+    private float fireDuration = 1f; // 불 이펙트 지속 시간
     private float fireTimer = 0f; // 불 이펙트 타이머
 
     private void Update()
@@ -71,6 +71,7 @@ public class RobotController10 : MonoBehaviour
     {
         if (isBurning)
         {
+
             fireEffect.SetActive(false);
             // 나무를 태우는 동작 및 로직 중지
             // ...
