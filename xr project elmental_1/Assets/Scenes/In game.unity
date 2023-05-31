@@ -3667,6 +3667,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b3a9fc0261657a45b445761794572c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fire: {fileID: 1930243700}
+  earth: {fileID: 1930243701}
 --- !u!1 &722074533 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6615717265034027437, guid: 7fe8d1724a408a141ac4c3d27f3b5925, type: 3}
@@ -4172,7 +4174,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Earth
+  m_text: earth
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8866,32 +8868,20 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Earth
+    - m_Text: earth
       m_Image: {fileID: 0}
     - m_Text: fire
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1785554982}
-        m_TargetAssemblyTypeName: TMPro.TMP_Dropdown, Unity.TextMeshPro
-        m_MethodName: set_value
-        m_Mode: 3
+      - m_Target: {fileID: 714926153}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: TMPro.TMP_Dropdown, Unity.TextMeshPro
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -9560,6 +9550,7 @@ GameObject:
   - component: {fileID: 1930243697}
   - component: {fileID: 1930243699}
   - component: {fileID: 1930243700}
+  - component: {fileID: 1930243701}
   m_Layer: 0
   m_Name: RightHand Controller
   m_TagString: RightHand Controller
@@ -9874,6 +9865,18 @@ MonoBehaviour:
   fireEffectPrefab: {fileID: 6484570765280912032, guid: 39b954628f7549d4484555a645920271, type: 3}
   rightControllerTransform: {fileID: 1930243691}
   treeObject: {fileID: 2062223772}
+--- !u!114 &1930243701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930243690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65d7c6f4574f04d4691e581a7b785aa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1949535718
 GameObject:
   m_ObjectHideFlags: 0
