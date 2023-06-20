@@ -3,33 +3,38 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-
-public class Settherobottype : MonoBehaviour 
+public class Settherobottype : MonoBehaviour
 {
     //public ActionBasedSnapTurnProvider snapturn;
     //public ActionBasedContinuousTurnProvider continiousTurn;
-    
+
     public RobotController11 fire;
     public Earth earth;
-    public XRSimpleInteractable Fwood;
-    // 턴 방식 바꾸는법
+    public XRSimpleInteractable[] Fwood; // XRSimpleInteractable 오브젝트의 배열
+
+    // SetTypeFromIndex 메서드를 사용하여 인덱스에 따라 오브젝트 변경
     public void SetTypeFromIndex(int index)
     {
-        if(index == 0)
+        if (index == 0)
         {
             fire.enabled = false;
             earth.enabled = true;
-            Fwood.enabled = false;
-            
+            SetFwoodObjectsEnabled(false);
         }
-        else if(index == 1)
+        else if (index == 1)
         {
-           
-           fire.enabled = true;
+            fire.enabled = true;
             earth.enabled = false;
-            Fwood.enabled=true;
+            SetFwoodObjectsEnabled(true);
         }
-
     }
 
+    // Fwood 배열의 모든 오브젝트의 enabled 값을 설정하는 메서드
+    private void SetFwoodObjectsEnabled(bool enabled)
+    {
+        foreach (XRSimpleInteractable fwoodObject in Fwood)
+        {
+            fwoodObject.enabled = enabled;
+        }
+    }
 }
