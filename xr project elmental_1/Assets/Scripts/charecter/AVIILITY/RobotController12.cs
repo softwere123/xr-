@@ -2,9 +2,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
-public class RobotController11 : MonoBehaviour
+public class RobotController12 : MonoBehaviour
 {
+    public class VRInteractableObject : MonoBehaviour, IInteractable
+    {
+        // 인터페이스 메서드 구현
+        public void OnHoverEnter(XRBaseInteractor interactor)
+        {
+            
+        }
 
+        public void OnHoverExit(XRBaseInteractor interactor)
+        {
+            // Hover 종료 시 수행할 동작
+        }
+
+        public void OnSelectEnter(XRBaseInteractor interactor)
+        {
+            // Select 진입 시 수행할 동작
+        }
+
+        public void OnSelectExit(XRBaseInteractor interactor)
+        {
+            // Select 종료 시 수행할 동작
+        }
+
+        // 기타 필요한 메서드 및 변수
+    }
     public GameObject fireEffectPrefab; // 불 이펙트 프리팹
     public Transform rightControllerTransform; // 오른쪽 컨트롤러의 위치를 나타내는 Transform
     public GameObject[] treeObjects; // 나무 오브젝트들을 담는 배열

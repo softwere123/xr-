@@ -9,9 +9,9 @@ public class Settherobottype : MonoBehaviour
     //public ActionBasedSnapTurnProvider snapturn;
     //public ActionBasedContinuousTurnProvider continiousTurn;
     
-    public RobotController10 fire;
+    public RobotController11 fire;
     public Earth earth;
-
+    public XRSimpleInteractable Fwood;
     // 턴 방식 바꾸는법
     public void SetTypeFromIndex(int index)
     {
@@ -19,6 +19,7 @@ public class Settherobottype : MonoBehaviour
         {
             fire.enabled = false;
             earth.enabled = true;
+            Fwood.enabled = false;
             
         }
         else if(index == 1)
@@ -26,7 +27,7 @@ public class Settherobottype : MonoBehaviour
            
            fire.enabled = true;
             earth.enabled = false;
-           
+            Fwood.enabled=true;
         }
 
     }
