@@ -10,7 +10,8 @@ public class Settherobottype : MonoBehaviour
 
     public RobotController11 fire;
     public Earth earth;
-    public XRSimpleInteractable[] Fwood; // XRSimpleInteractable 오브젝트의 배열
+    public XRSimpleInteractable[] Fwood;
+    //public GameObject dropdownObject;// XRSimpleInteractable 오브젝트의 배열
 
     // SetTypeFromIndex 메서드를 사용하여 인덱스에 따라 오브젝트 변경
     public void SetTypeFromIndex(int index)

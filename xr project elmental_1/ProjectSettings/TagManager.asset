@@ -8,6 +8,7 @@ TagManager:
   - RightHand Controller
   - Ball
   - Tree
+  - Monster
   layers:
   - Default
   - TransparentFX
