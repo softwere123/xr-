@@ -9,6 +9,7 @@ TagManager:
   - Ball
   - Tree
   - Monster
+  - DisappearObject
   layers:
   - Default
   - TransparentFX
