@@ -23608,6 +23608,10 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1308296131}
+    - target: {fileID: 2324434066407377204, guid: 591d344f2d8bd1f47bdd7841f85b26a4, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 2324434066407377213, guid: 591d344f2d8bd1f47bdd7841f85b26a4, type: 3}
       propertyPath: m_InteractionManager
       value: 
@@ -23631,6 +23635,10 @@ PrefabInstance:
     - target: {fileID: 2324434066644452741, guid: 591d344f2d8bd1f47bdd7841f85b26a4, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2433850596151832162, guid: 591d344f2d8bd1f47bdd7841f85b26a4, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 591d344f2d8bd1f47bdd7841f85b26a4, type: 3}
