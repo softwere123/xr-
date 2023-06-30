@@ -1799,7 +1799,7 @@ GameObject:
   - component: {fileID: 1004411478}
   - component: {fileID: 1004411477}
   m_Layer: 3
-  m_Name: Left HandPhysics
+  m_Name: LeftHandPhysics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2463,11 +2463,31 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2758817595729729801, guid: 5093bc0e12486e043baa93e60577e610, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2758817595729729801, guid: 5093bc0e12486e043baa93e60577e610, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2758817595750671752, guid: 5093bc0e12486e043baa93e60577e610, type: 3}
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2758817595750671752, guid: 5093bc0e12486e043baa93e60577e610, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2758817595755275736, guid: 5093bc0e12486e043baa93e60577e610, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2758817595755275737, guid: 5093bc0e12486e043baa93e60577e610, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2758817595755275738, guid: 5093bc0e12486e043baa93e60577e610, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -2527,6 +2547,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2758817595864061687, guid: 5093bc0e12486e043baa93e60577e610, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2758817595881952924, guid: 5093bc0e12486e043baa93e60577e610, type: 3}
       propertyPath: m_Layer
       value: 3
@@ -2559,13 +2583,17 @@ PrefabInstance:
       propertyPath: treeObjects.Array.data[5]
       value: 
       objectReference: {fileID: 310855916}
+    - target: {fileID: 2758817595902047759, guid: 5093bc0e12486e043baa93e60577e610, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2758817595902047766, guid: 5093bc0e12486e043baa93e60577e610, type: 3}
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2758817595902047767, guid: 5093bc0e12486e043baa93e60577e610, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.1474
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2758817596414676833, guid: 5093bc0e12486e043baa93e60577e610, type: 3}
       propertyPath: m_Layer
@@ -2587,9 +2615,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2758817597251194917, guid: 5093bc0e12486e043baa93e60577e610, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2758817597251194925, guid: 5093bc0e12486e043baa93e60577e610, type: 3}
       propertyPath: m_Layer
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2758817597251194925, guid: 5093bc0e12486e043baa93e60577e610, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2758817597251194925, guid: 5093bc0e12486e043baa93e60577e610, type: 3}
+      propertyPath: m_TagString
+      value: LeftHand Controller
       objectReference: {fileID: 0}
     - target: {fileID: 2758817597354843299, guid: 5093bc0e12486e043baa93e60577e610, type: 3}
       propertyPath: m_Layer
@@ -3685,6 +3725,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1866490352}
   - component: {fileID: 1866490353}
+  - component: {fileID: 1866490354}
   m_Layer: 3
   m_Name: VR Physics Rig
   m_TagString: Untagged
@@ -3729,6 +3770,33 @@ MonoBehaviour:
   bodycollider: {fileID: 961916510}
   bodyHeigtMin: 0.5
   bodyHeigtMax: 2
+--- !u!114 &1866490354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866490351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7933a73be8f2a1d4abd02fb5d4328b5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  moveInputSoure:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Move Input Soure
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 2b5d5656-2abd-4d36-aa68-cd9c85d5a449
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 6972639530819350904, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  rb: {fileID: 1539826669}
+  directionSourec: {fileID: 1720693073}
 --- !u!1001 &2045750263
 PrefabInstance:
   m_ObjectHideFlags: 0
