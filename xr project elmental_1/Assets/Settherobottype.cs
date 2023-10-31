@@ -11,6 +11,8 @@ public class Settherobottype : MonoBehaviour
     public RobotController11 fire;
     public Earth earth;
     public XRSimpleInteractable[] Fwood;
+    public XRSimpleInteractable[] Wfire;
+
     //public GameObject dropdownObject;// XRSimpleInteractable 오브젝트의 배열
 
     // SetTypeFromIndex 메서드를 사용하여 인덱스에 따라 오브젝트 변경
@@ -21,12 +23,14 @@ public class Settherobottype : MonoBehaviour
             fire.enabled = false;
             earth.enabled = true;
             SetFwoodObjectsEnabled(false);
+            SetFire(true);
         }
         else if (index == 1)
         {
             fire.enabled = true;
             earth.enabled = false;
             SetFwoodObjectsEnabled(true);
+            SetFire(false);
         }
     }
 
@@ -36,6 +40,14 @@ public class Settherobottype : MonoBehaviour
         foreach (XRSimpleInteractable fwoodObject in Fwood)
         {
             fwoodObject.enabled = enabled;
+        }
+    }
+
+    private void SetFire(bool enabled)
+    {
+        foreach (XRSimpleInteractable WfireObject in Wfire)
+        {
+            Wfire.enabled = enabled;
         }
     }
 }
