@@ -3,17 +3,23 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - LeftHand Controller
+  - RightHand Controller
+  - Ball
+  - Tree
+  - Monster
+  - DisappearObject
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Body
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Player
+  - interactable
+  - Post Processing
   - 
   - 
   - 
